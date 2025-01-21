@@ -165,6 +165,10 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     [self sharedView].font = font;
 }
 
++ (void)setTextAlignment:(NSTextAlignment)textAlignment {
+    [self sharedView].statusLabel.textAlignment = textAlignment;
+}
+
 + (void)setForegroundColor:(UIColor*)color {
     [self sharedView].foregroundColor = color;
     [self setDefaultStyle:SVProgressHUDStyleCustom];

@@ -85,6 +85,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 /// @discussion Default: CGSizeZero.
 @property (assign, nonatomic) CGSize minimumSize UI_APPEARANCE_SELECTOR;
 @property (assign, nonatomic) CGSize contentMinimumSize UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) NSTextAlignment textAlignment UI_APPEARANCE_SELECTOR;
 
 /// Thickness of the ring shown in the HUD.
 /// @discussion Default: 2 pt.
@@ -205,6 +206,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setMinimumSize:(CGSize)minimumSize;
 
 + (void)setContentMinimumSize:(CGSize)minimumSize;
++ (void)setTextAlignment:(NSTextAlignment)textAlignment;
 
 /// Sets the ring thickness for the HUD.
 /// @param ringThickness Thickness of the ring.
