@@ -84,6 +84,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
 /// @discussion Default: CGSizeZero.
 @property (assign, nonatomic) CGSize minimumSize UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) CGSize contentMinimumSize UI_APPEARANCE_SELECTOR;
 
 /// Thickness of the ring shown in the HUD.
 /// @discussion Default: 2 pt.
@@ -202,6 +203,8 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 /// Sets the minimum size for the HUD.
 /// @param minimumSize The minimum size for the HUD.
 + (void)setMinimumSize:(CGSize)minimumSize;
+
++ (void)setContentMinimumSize:(CGSize)minimumSize;
 
 /// Sets the ring thickness for the HUD.
 /// @param ringThickness Thickness of the ring.
